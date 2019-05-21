@@ -23,16 +23,18 @@ const SubmenuAccordion: StorefrontFunctionComponent<Props> = ({
   </Collapsible>
 )
 
-const messages = defineMessages({
-  submenuTitle: {
-    defaultMessage: '',
-    id: 'editor.menu.submenu.title',
-  },
-})
+SubmenuAccordion.getSchema = () => {
+  const messages = defineMessages({
+    submenuTitle: {
+      defaultMessage: '',
+      id: 'admin/editor.menu.submenu.title',
+    },
+  })
 
-SubmenuAccordion.getSchema = () => ({
-  title: messages.submenuTitle.id,
-  type: 'object',
-})
+  return {
+    title: messages.submenuTitle.id,
+    type: 'object',
+  }
+}
 
 export default SubmenuAccordion
