@@ -4,7 +4,7 @@ import React, { Component, ReactNode } from 'react'
 import { Link } from 'vtex.render-runtime'
 import { Container } from 'vtex.store-components'
 import Options from './constants/Options'
-import style from './MenuLink.css'
+import style from './styles/style.css'
 // This is required because is used in static schema attribute of Menu Component
 const GLOBAL_PAGES =
   (global as any).__RUNTIME__ && Object.keys((global as any).__RUNTIME__.pages)
