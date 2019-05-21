@@ -21,6 +21,7 @@
     "allowed": [
       "menu",
       "info-card",
+      "rich-text",
       "submenu-col"
     ]
   },
@@ -36,7 +37,7 @@
     "composition": "children",
     "allowed": [
       "menu",
-      "info-card"
+      "rich-text"
     ]
   },
   "unstable--menu": {
